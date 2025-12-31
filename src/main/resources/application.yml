@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  tomcat:
+    keep-alive-timeout: 60000
+    max-keep-alive-requests: 1000
+
+
+jimmer:
+  dialect: org.babyfish.jimmer.sql.dialect.MySqlDialect
+  show-sql: true
+  pretty-sql: true
+  database-validation-mode: ERROR
+  inline-sql-variables: true
+
+spring:
+  output:
+    ansi:
+      enabled: always
+  threads:
+    virtual:
+      enabled: true

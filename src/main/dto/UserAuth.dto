@@ -1,0 +1,10 @@
+export me.frk2222.jmb.model.UserAuth
+	-> package me.frk2222.jmb.model.dto
+
+
+dynamic input ResetPwdInput {
+	userAuthIdentifier as phone
+	userAuthCredential as password
+	rePassword: String
+	code: String
+}
